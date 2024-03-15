@@ -82,9 +82,9 @@ public class automateAmazon {
             addAddress.click();
 
             //Proceed to Payment
-            Thread.sleep(2000);
-            WebElement paymentMethod = driver.findElement(By.xpath("//*[@id=\"orderSummaryPrimaryActionBtn\"]/span/input"));
-            paymentMethod.click();
+            // Thread.sleep(2000);
+            // WebElement paymentMethod = driver.findElement(By.xpath("//*[@id=\"orderSummaryPrimaryActionBtn\"]/span/input"));
+            // paymentMethod.click();
 
             // Close the browser
             driver.quit();
