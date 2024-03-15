@@ -11,7 +11,8 @@ import java.util.Set;
 public class automateAmazon {
 
         public static void main(String[] args) throws InterruptedException {
-            // Set the path to ChromeDriver executable
+                
+            // Set the path to ChromeDriver
             WebDriverManager.chromedriver().setup();
 
             // Create a new instance of ChromeDriver
@@ -58,6 +59,7 @@ public class automateAmazon {
             WebElement firstSearchResult = driver.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/span/div/div/div[2]/div[2]/h2/a/span"));
             firstSearchResult.click();
 
+            // Handling Multple Windows
             Set<String> s = driver.getWindowHandles ();
             ArrayList ar = new ArrayList(s);
             System.out.println(ar.get(0));
